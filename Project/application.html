@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lending Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-brand">Coffeenect</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>   
+            <li><a href="#">Profile</a></li>    
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h1>Coffeenect Lending Application Form</h1>
+
+        <form action="/submit_application" method="POST" enctype="multipart/form-data">
+            
+            <h2>Personal Information</h2>
+            <div class="row">
+                <div class="column">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+
+                <div class="column">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="column">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+            </div>
+            
+            <div class="row">
+            <div class="column">
+                <label for="status">Membership Status:</label>
+                <input type="text" id="status" name="status" required>
+            </div>            </div>
+            
+            <h2>Loan Information</h2>
+            <div class="row">
+                <div class="column">
+                    <label for="loan-amount">Loan Amount (Max: P5000):</label>
+                    <input type="number" id="loan-amount" name="loan_amount" max="5000" required>
+                    <small class="note">Note: The maximum loan amount you can request is P5000.</small>
+                </div>
+
+            </div>
+
+            <label for="loan-purpose">Purpose of Loan:</label>
+            <input type="text" id="loan-purpose" name="loan_purpose" required>
+           
+            <label for="membership-card">Upload Membership Card:</label>
+            <input type="file" id="membership-card" name="membership_card" accept="image/*" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
