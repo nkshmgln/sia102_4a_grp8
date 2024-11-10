@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeenect Loan Management</title>
+    <link rel="stylesheet" href="stylea.css">
+    <script src="accdeny.js"></script> 
+</head>
+<body>
+    <div class="main-content">
+        <h1>Loan Management Dashboard</h1>
+
+        <!-- Add Dropdown for Filtering -->
+        <div class="filter-container">
+            <label for="loanStatusFilter">Select Status:</label>
+            <select id="loanStatusFilter" onchange="filterLoans()">
+                <option value="all">All</option>
+                <option value="accepted">Accepted</option>
+                <option value="denied">Denied</option>
+            </select>
+        </div>
+
+        <table class="loan-table">
+            <thead>
+                <tr> 
+                    <th>Membership-id</th>
+                    <th>Name</th>
+                    <th>Birthdate</th>
+                    <th>Email</th>
+                    <th>Purpose</th>
+                    <th>Loan-amount</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
