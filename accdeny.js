@@ -52,7 +52,7 @@ window.setTimeout(() => {
         },
         {
             id: "002",
-            name: "Joshue Umali",
+            name: "Joshua Umali",
             birthdate: "1985-05-15",
             email: "joshuaumali02@gmail.com",
             purpose: "Business Expansion",
