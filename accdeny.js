@@ -43,18 +43,18 @@ window.setTimeout(() => {
     const loanList = [
         {
             id: "001", 
-            name: "John Doe",
+            name: "Justine Briones",
             birthdate: "1990-01-01",
-            email: "johndoe@example.com",
+            email: "JustineBriones18@gmail.com",
             purpose: "Home Renovation",
             loanAmount: "$5000",
             status: "Pending"
         },
         {
             id: "002",
-            name: "Jane Smith",
+            name: "Joshue Umali",
             birthdate: "1985-05-15",
-            email: "janesmith@example.com",
+            email: "joshuaumali02@gmail.com",
             purpose: "Business Expansion",
             loanAmount: "$2000",
             status: "Pending"
