@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeenect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('coffee.png') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: 1;
+        }
+        .navbar, .main-content {
+            position: relative;
+            z-index: 2;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .loan-button {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: #6b4e31;
+            border: none;
+            text-decoration: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .loan-button:hover {
+            background-color: #5a3f27;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            Coffeenect
+        </div>
+        <div class="navbar-right">
+            <a href="home.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <a href="home.html" class="loan-button">Apply Loan Now</a>
+    </div>
+</body>
+</html>
